@@ -1,0 +1,19 @@
+{
+  "name": "p3_charlietaniere_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlie-Taniere/sign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charlie-Taniere/sign/issues"
+  },
+  "homepage": "https://github.com/Charlie-Taniere/sign#readme"
+}
