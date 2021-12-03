@@ -1,2 +1,9 @@
-/*# sourceMappingURL=styles.css.map */
+.box {
+  box-sizing: border-box;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */
