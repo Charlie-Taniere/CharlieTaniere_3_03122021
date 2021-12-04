@@ -1,4 +1,10 @@
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/base";
 @import "./base/typography";
 @import "./layouts/header";
 @import "./layouts/form";
+@import "./pages/presentation";
+@import "./components/bouton-titre";
+@import "./pages/nav";
+@import "./components/bouton-fonctionnement";

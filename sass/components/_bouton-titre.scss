@@ -1,0 +1,18 @@
+.bouton {
+    display: flex;
+    height: 40px;
+    width: auto;
+   margin: 20px;
+   padding: 25px 30px;
+    background-color: pink;
+    border: solid 2px black;
+    border-radius: 25px ;
+
+}
+
+.bouton p {
+    align-self: center;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+        }

@@ -1,0 +1,10 @@
+@mixin h1 {
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+@mixin h3 {
+    font-family: "Roboto";
+    font-weight: 200;
+    font-size: medium;
+}

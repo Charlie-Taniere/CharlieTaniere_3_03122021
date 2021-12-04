@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+
+   &_titre {
+       @include h1;
+   } 
+}
