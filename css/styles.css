@@ -6,4 +6,44 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url(css\f ontsShrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(css\f ontsRoboto-Black.ttf);
+}
+* {
+  font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.form-localisation_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  background-color: #eaeaea;
+  border-top: 5px solid #dbdbdb;
+}
+.form-localisation_container_logo {
+  padding-right: 20px;
+}
+.form-localisation_container_form input {
+  border-style: none;
+  background-color: #eaeaea;
+  font-weight: 500;
+  font-size: 25px;
+  width: 155px;
+}
+
 /*# sourceMappingURL=styles.css.map */

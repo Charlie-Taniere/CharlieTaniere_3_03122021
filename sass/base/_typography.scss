@@ -1,0 +1,12 @@
+@font-face {
+    font-family:"Shrikhand";
+    src: url(css\Fonts\Shrikhand-Regular.ttf);
+}
+@font-face {
+    font-family:"Roboto" ;
+    src: url(css\Fonts\Roboto-Black.ttf);
+}
+
+* {
+    font-family: 'Shrikhand', 'Roboto', Arial, Helvetica, sans-serif;
+}

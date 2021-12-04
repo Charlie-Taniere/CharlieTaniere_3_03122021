@@ -1,0 +1,22 @@
+.form-localisation_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: #eaeaea;
+    border-top: 5px solid #dbdbdb;
+
+    &_logo  {
+        padding-right: 20px;
+
+    }
+    &_form input {
+        border-style: none;
+        background-color: #eaeaea;
+        font-weight: 500;
+        font-size: 25px;
+        width: 155px;
+        
+    }
+}
+
