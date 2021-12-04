@@ -1,0 +1,26 @@
+.nav_bouton {
+    display: flex;
+    align-self: center;
+    height: 115px;
+    width: 100%;
+    margin: 15px 0;
+    background-color: $colour-background;
+    border: solid 2px black;
+    border-radius: 35px ;
+
+    &_rond {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items:center ;
+        margin-left: -17px;
+        height: 35px;
+        width: 35px;
+        background-color: pink;
+        border-radius: 25px;
+    }
+    &_rond p {
+     color: white;
+    }
+}
+
