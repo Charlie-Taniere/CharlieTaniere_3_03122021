@@ -1,3 +1,11 @@
+.jump::before {
+    display: inline;
+}
+.jump::after {
+    content: "";
+    display: block;
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
@@ -16,8 +24,13 @@
         width: 100%;
         height: auto;
     }
-
+    &_container_titre {
+        display: flex;
+        text-align: center;
+    }
     &_container_titre h1 {
+        display: flex;
+     
      @include h1;
     }
 
@@ -25,5 +38,6 @@
         font-family: 'Roboto';
         font-weight: 100;
         color: #707070;
+        text-align: center;
     }
 }
