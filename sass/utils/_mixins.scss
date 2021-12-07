@@ -10,7 +10,11 @@
 }
 
 @mixin bouton {
-    background: $colour-bouton;
+    background: linear-gradient(
+        356deg,
+        rgba(155, 89, 220, 1) 0%,
+        rgba(167, 127, 216, 1) 33%,
+        rgba(255, 121, 218, 1) 100%);
     box-shadow: 3px 2px 2px darken($colour-background, 10%); 
     
 }
