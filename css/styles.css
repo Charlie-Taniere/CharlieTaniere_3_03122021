@@ -110,16 +110,18 @@ h3 {
 }
 
 .bouton {
+  background: linear-gradient(to bottom right, #FF79DA 10%, #9356DC 100%);
+  box-shadow: 3px 2px 2px #dddddd;
   display: flex;
   height: 40px;
   width: auto;
   margin: 20px;
   padding: 25px 30px;
-  background-color: #FF79DA;
-  border: solid 2px black;
   border-radius: 25px;
 }
-
+.bouton:hover {
+  background: #ff3333;
+}
 .bouton p {
   align-self: center;
   color: white;

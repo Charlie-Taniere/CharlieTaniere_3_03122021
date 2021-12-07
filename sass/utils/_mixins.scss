@@ -8,3 +8,10 @@
     font-weight: 200;
     font-size: medium;
 }
+
+@mixin bouton {
+    background: $colour-bouton;
+    box-shadow: 3px 2px 2px darken($colour-background, 10%); 
+    
+}
+

@@ -1,18 +1,20 @@
 .bouton {
+    @include bouton;
     display: flex;
     height: 40px;
     width: auto;
-   margin: 20px;
-   padding: 25px 30px;
-    background-color: $colour-secondary;
-    border: solid 2px black;
-    border-radius: 25px ;
+    margin: 20px;
+    padding: 25px 30px;
+    border-radius: 25px;
+    &:hover {
+            background: lighten(red, 10%);
+       
+    }
+    p {
+        align-self: center;
+        color: white;
+        font-size: larger;
+        font-weight: 500;
+    }
 
 }
-
-.bouton p {
-    align-self: center;
-    color: white;
-    font-size: larger;
-    font-weight: 500;
-        }
