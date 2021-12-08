@@ -13,8 +13,8 @@
     }
     &_form input {
         border-style: none;
-        background-color: #eaeaea;
-        font-weight: 500;
+        background-color: $form-background;
+        font-weight: $font;
         font-size: 25px;
         width: 155px;
     }

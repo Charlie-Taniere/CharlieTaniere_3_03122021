@@ -18,3 +18,14 @@
     box-shadow: 3px 2px 2px darken($colour-background, 10%); 
 }
 
+@mixin arrow {
+    display: flex;
+    justify-self: left;
+    align-self: center;
+    position: absolute;
+    left: 7%;
+    i {
+        color: #353535;
+    }
+      
+}

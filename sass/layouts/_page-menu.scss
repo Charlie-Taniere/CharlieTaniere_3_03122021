@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: $colour-background;
+    margin-top: -100px;
+    border: solid black 5px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+&_container {
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 2000px;
+padding-right: 5%;
+padding-left: 5%;
+}
+}

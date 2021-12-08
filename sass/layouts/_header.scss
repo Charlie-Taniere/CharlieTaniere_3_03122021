@@ -1,14 +1,23 @@
-
 .header {
     display: flex;
     justify-content: center;
     height: auto;
     width: auto;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 25px;
+     
+     &_arrow {
+        @include arrow; }
+
+    &_logo {
+        width: auto;
+        max-width: 50%;
+        display: flex;
+        height: auto;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }
 
-.header img {
-    width: 50%;
-    height: auto;
-}
