@@ -3,10 +3,19 @@
     align-self: center;
     height: 90px;
     width: 100%;
+    max-width: 410px;
     margin: 15px 0;
     background-color: $colour-background;
-    border: solid 2px black;
+    box-shadow: 3px 2px 2px darken($colour-background, 10%);
     border-radius: 35px;
+    &:hover i{
+        color: $colour-primary;
+    }
+    &:hover {
+        background: #f5edff;
+        box-shadow: 3px 2px 2px darken($colour-background, 30%)
+    }
+
 
     &_rond {
         display: flex;
@@ -29,9 +38,11 @@
 
     &_h3 {
         display: flex;
+        width: auto;
         justify-items: center;
         align-items: center;
         padding-left: 25px;
         color: #353535;
     }
 }   
+

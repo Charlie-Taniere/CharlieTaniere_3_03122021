@@ -12,6 +12,7 @@ p {
 }
 
 a {
+  display: flex;
   text-decoration: none;
   color: black;
 }
@@ -140,6 +141,7 @@ h4 {
 }
 .bouton:hover {
   background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
+  box-shadow: 3px 2px 2px #2a2a2a;
 }
 .bouton p {
   align-self: center;
@@ -170,10 +172,18 @@ h4 {
   align-self: center;
   height: 90px;
   width: 100%;
+  max-width: 410px;
   margin: 15px 0;
   background-color: #f6f6f6;
-  border: solid 2px black;
+  box-shadow: 3px 2px 2px #dddddd;
   border-radius: 35px;
+}
+.nav_bouton:hover i {
+  color: #9356DC;
+}
+.nav_bouton:hover {
+  background: #f5edff;
+  box-shadow: 3px 2px 2px #aaaaaa;
 }
 .nav_bouton_rond {
   display: flex;
@@ -195,6 +205,7 @@ h4 {
 }
 .nav_bouton_h3 {
   display: flex;
+  width: auto;
   justify-items: center;
   align-items: center;
   padding-left: 25px;
@@ -212,6 +223,9 @@ h4 {
   padding-top: 30px;
   padding-bottom: 50px;
   background-color: #f6f6f6;
+}
+.restaurant_titre {
+  margin-bottom: 10px;
 }
 .restaurant_card {
   display: flex;
@@ -245,14 +259,15 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 15px;
   width: 80%;
 }
 .restaurant_card_info_texte h3 {
   padding-top: 19px;
+  padding-left: 15px;
 }
 .restaurant_card_info_texte h4 {
   padding-bottom: 19px;
+  padding-left: 15px;
 }
 .restaurant_card_info_logo {
   display: flex;
