@@ -4,16 +4,91 @@
     width: 100%;
     height: auto;
     background: $colour-background;
-    margin-top: -100px;
-    border: solid black 5px;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-&_container {
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 2000px;
-padding-right: 5%;
-padding-left: 5%;
-}
+    margin-top: -130px;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
+    position: absolute;
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 2000px;
+        padding-right: 5%;
+        padding-left: 5%;
+
+        &_titre {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 40px;
+
+            &_titre {
+                width: 80%;
+
+                h1 {
+                    font-weight: 1000;
+                    font-size: 50px;
+                    font-family: 'Shrikhand';
+                    font-style: italic;
+                }
+            }
+
+            &_logo {
+                align-self: center;
+                padding-right: 35px;
+            }
+        }
+        &_list {
+            display: flex;
+            padding-top: 35px;
+            h2 {
+            display: inline-block;
+            padding-bottom: 8px;
+            font-weight: lighter;
+            color: #7b7b7b;
+            position: relative;
+            font-size: 25px;
+            }
+            h2:before{
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 1px;
+                bottom: 0;
+                right: 40%;
+                border-bottom: 4px solid $colour-tertiary;
+            }
+        }
+        &_menu {
+            display: flex;
+            flex-direction: column;
+            border: solid 3px black;
+            border-radius: 25px;
+            background: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 25px;
+            h2 {
+                font-size: 25px;
+            }
+            &_detail {
+                display: flex;
+                justify-content: space-between;
+                &_ingredient p{
+                    color: #676767;
+                    font-size: 20px;
+                    }
+                &_prix p{
+                    font-weight: bold;
+                    color: #3d3d3d;
+                    font-size: 20px;
+                    }
+            }
+            
+        }
+        
+    }
 }

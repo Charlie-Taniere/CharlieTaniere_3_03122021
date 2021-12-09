@@ -29,3 +29,9 @@
     }
       
 }
+@mixin fill {
+ transform-origin: bottom;
+ transform: scaleZ(0);
+ transition: transform 1000ms; 
+background: $colour-primary;
+}
