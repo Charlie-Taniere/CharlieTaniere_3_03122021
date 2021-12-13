@@ -1,0 +1,138 @@
+/* Typographie responsive */ 
+
+$breakpoints: (
+  small : 400px,
+  medium: 650px, 
+  large : 1024px
+);
+
+$p-font-sizes: (
+  null  : 18px,
+  small : 20px,
+  medium: 22px,
+  large : 24px
+);
+
+$i-footer-and-new-font-sizes: (
+  null  : 14px,
+  small : 16px,
+  medium: 18px,
+  large : 20px
+);
+
+$i-footer-font-sizes: (
+  null  : 14px,
+  small : 16px,
+  medium: 18px,
+  large : 20px
+);
+
+$h1-font-sizes: (
+  null  : 28px,
+  small : 31px,
+  medium: 33px,
+  large : 36px
+);
+
+$h2-font-sizes: (
+  null  : 20px,
+  small : 25px,
+  medium: 27px,
+  large : 30px
+);
+
+$h3-font-sizes: (
+  null  : 18px,
+  small : 20px,
+  medium: 22px,
+  large : 24px
+);
+
+$h4-font-sizes: (
+    null  : 18px,
+    small : 20px,
+    medium: 22px,
+    large : 24px
+);
+
+
+/* Height responsive */ 
+
+$form-height: (
+  null  : 50px,
+  small : 60px,
+  medium: 70px,
+  large : 80px
+);
+
+$bouton-height: (
+  null  : 40px,
+  small : 50px,
+  medium: 60px,
+  large : 70px
+);
+
+$nav-height: (
+  null  : 70px,
+  small : 80px,
+  medium: 90px,
+  large : 100px
+);
+
+$rond-height: (
+  null  : 22px,
+  small : 24px,
+  medium: 26px,
+  large : 28px
+);
+
+$card-height: (
+  null  : 230px,
+  small : 350px,
+  medium: 375px,
+  large : 400px
+);
+
+$card-img-height: (
+  null  : 160px,
+  small : 75%,
+  medium: 75%,
+  large : 75%
+);
+
+$card-info-height: (
+  null  : 70px,
+  small : 25%,
+  medium: 25%,
+  large : 25%
+);
+
+$card-new-height: (
+  null  : 28px,
+  small : 30px,
+  medium: 32px,
+  large : 34px
+);
+
+/* Width responsive */ 
+
+$bouton-width: (
+  null  : 220px,
+  small : 240px,
+  medium: 260px,
+  large : 280px
+);
+
+$rond-width: (
+  null  : 22px,
+  small : 24px,
+  medium: 26px,
+  large : 28px
+);
+
+$card-new-width: (
+  null  : 75px,
+  small : 80px,
+  medium: 85px,
+  large : 90px
+);

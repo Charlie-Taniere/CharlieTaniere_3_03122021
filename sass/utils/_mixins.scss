@@ -1,13 +1,57 @@
-@mixin h1 {
-    font-family: "Roboto";
-    font-weight: 600;
-}
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+      @if $fs-breakpoint == null {
+        font-size: $fs-font-size;
+      }
+      @else {
+        // If $fs-font-size is a key that exists in
+        // $fs-breakpoints, use the value
+        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+        }
+        @media screen and (min-width: $fs-breakpoint) {
+          font-size: $fs-font-size;
+        }
+      }
+    }
+  }
 
-@mixin h3 {
-    font-family: "Roboto";
-    font-weight: 200;
-    font-size: medium;
-}
+  @mixin height($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-height in $fs-map {
+      @if $fs-breakpoint == null {
+        height: $fs-height;
+      }
+      @else {
+        // If $fs-font-size is a key that exists in
+        // $fs-breakpoints, use the value
+        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+        }
+        @media screen and (min-width: $fs-breakpoint) {
+          height: $fs-height;
+        }
+      }
+    }
+  }
+
+  @mixin width($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-width in $fs-map {
+      @if $fs-breakpoint == null {
+        width: $fs-width;
+      }
+      @else {
+        // If $fs-font-size is a key that exists in
+        // $fs-breakpoints, use the value
+        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+        }
+        @media screen and (min-width: $fs-breakpoint) {
+          width: $fs-width;
+        }
+      }
+    }
+  }
+
 
 @mixin bouton {
     background: linear-gradient(
@@ -30,8 +74,10 @@
       
 }
 @mixin fill {
- transform-origin: bottom;
- transform: scaleZ(0);
- transition: transform 1000ms; 
-background: $colour-primary;
+transform-origin: bottom;
+transform: scaleZ(0);
+transition: transform 4000ms;
+font-weight: 1000;
+color: $colour-primary;
 }
+

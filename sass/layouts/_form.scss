@@ -2,20 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    @include height ($form-height);
     background-color: #eaeaea;
     border-top: 5px solid #dbdbdb;
 
     &_logo  {
         padding-right: 20px;
         color:#353535;
+        i {
+            @include font-size ($p-font-sizes);
+            
+        }
 
     }
     &_form input {
         border-style: none;
         background-color: $form-background;
-        font-weight: $font;
-        font-size: 25px;
+        font-weight: 500;
+        @include font-size ($h3-font-sizes);
         width: 155px;
     }
     &_form input::placeholder {

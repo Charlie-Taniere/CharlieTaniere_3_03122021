@@ -1,10 +1,10 @@
 .bouton {
     @include bouton;
     display: flex;
-    height: 40px;
-    width: auto;
+    @include height ($bouton-height);
+    @include width ($bouton-width);
     margin: 20px;
-    padding: 25px 30px;
+    padding: 25px 20px;
     border-radius: 25px;
     &:hover {
         background: linear-gradient(
@@ -17,7 +17,7 @@
     p {
         align-self: center;
         color: white;
-        font-size: larger;
+        @include font-size ($p-font-sizes);
         font-weight: 500;
     }
 

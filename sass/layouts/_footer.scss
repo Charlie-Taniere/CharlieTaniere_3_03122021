@@ -30,6 +30,9 @@
             display: flex;
             width: 25px;
             margin-right: 5px;
+            i {
+                @include font-size ($i-footer-and-new-font-sizes);
+            }
         }
     } 
    
