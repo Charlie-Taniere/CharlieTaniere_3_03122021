@@ -42,7 +42,7 @@
         }
     }
 
-    &_h3 {
+    &_p {
         @include font-size ($p-font-sizes);
         display: flex;
         width: auto;
@@ -54,3 +54,12 @@
     }
 }   
 
+@media screen and (min-width: 992px) {
+    .nav_bouton {
+        width: 30%;
+        &_p {
+            font-size: 20px;
+        }
+
+    }
+}

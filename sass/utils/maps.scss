@@ -1,58 +1,59 @@
 /* Typographie responsive */ 
 
 $breakpoints: (
-  small : 400px,
-  medium: 650px, 
-  large : 1024px
+  smaller : 400px,
+  small: 650px, 
+  medium : 768px,
+  large : 992px
 );
 
 $p-font-sizes: (
   null  : 18px,
-  small : 20px,
-  medium: 22px,
-  large : 24px
+  smaller : 20px,
+  small: 22px,
+  medium : 24px
 );
 
 $i-footer-and-new-font-sizes: (
   null  : 14px,
-  small : 16px,
-  medium: 18px,
-  large : 20px
+  smaller : 16px,
+  small: 18px,
+  medium : 20px
 );
 
 $i-footer-font-sizes: (
   null  : 14px,
-  small : 16px,
-  medium: 18px,
-  large : 20px
+  smaller : 16px,
+  small: 18px,
+  medium : 20px
 );
 
 $h1-font-sizes: (
   null  : 28px,
-  small : 31px,
-  medium: 33px,
-  large : 36px
+  smaller : 31px,
+  small: 33px,
+  medium : 36px
 );
 
 $h2-font-sizes: (
   null  : 20px,
-  small : 25px,
-  medium: 27px,
-  large : 30px
+  smaller : 25px,
+  small: 27px,
+  medium : 30px
 );
 
 $h3-font-sizes: (
   null  : 18px,
-  small : 20px,
-  medium: 22px,
-  large : 24px
+  smaller : 20px,
+  small: 22px,
+  medium : 24px
 );
 
 $h4-font-sizes: (
     null  : 18px,
-    small : 20px,
-    medium: 22px,
-    large : 24px
+    smaller : 20px,
+    small: 22px,
+    medium : 24px
 );
 
 
@@ -60,79 +61,85 @@ $h4-font-sizes: (
 
 $form-height: (
   null  : 50px,
-  small : 60px,
-  medium: 70px,
-  large : 80px
+  smaller : 60px,
+  small: 70px,
+  medium : 80px
 );
 
 $bouton-height: (
   null  : 40px,
-  small : 50px,
-  medium: 60px,
-  large : 70px
+  smaller : 50px,
+  small: 60px,
+  medium : 70px
 );
 
 $nav-height: (
   null  : 70px,
-  small : 80px,
-  medium: 90px,
-  large : 100px
+  smaller : 80px,
+  small: 90px,
+  medium : 100px,
+  large : 80px
 );
 
 $rond-height: (
   null  : 22px,
-  small : 24px,
-  medium: 26px,
-  large : 28px
+  smaller : 24px,
+  small : 26px,
+  medium : 28px
 );
 
 $card-height: (
   null  : 230px,
-  small : 350px,
-  medium: 375px,
-  large : 400px
+  smaller : 350px,
+  small : 380px,
+  medium : 380px,
+  large: 400px
 );
 
 $card-img-height: (
   null  : 160px,
-  small : 75%,
-  medium: 75%,
+  smaller : 75%,
+  small: 75%,
+  medium : 75%,
   large : 75%
 );
 
 $card-info-height: (
   null  : 70px,
-  small : 25%,
-  medium: 25%,
+  smaller : 25%,
+  small: 25%,
+  medium : 25%,
   large : 25%
 );
 
 $card-new-height: (
   null  : 28px,
-  small : 30px,
-  medium: 32px,
-  large : 34px
+  smaller : 30px,
+  small: 32px,
+  medium : 34px,
+  large : 36px
 );
 
 /* Width responsive */ 
 
 $bouton-width: (
   null  : 220px,
-  small : 240px,
-  medium: 260px,
-  large : 280px
+  smaller : 240px,
+  small: 260px,
+  medium : 280px
 );
 
 $rond-width: (
   null  : 22px,
-  small : 24px,
-  medium: 26px,
-  large : 28px
+  smaller : 24px,
+  small: 26px,
+  medium : 28px
 );
 
 $card-new-width: (
   null  : 75px,
-  small : 80px,
-  medium: 85px,
-  large : 90px
+  smaller : 80px,
+  small: 85px,
+  medium : 90px,
+  large : 100px
 );

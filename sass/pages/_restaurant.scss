@@ -63,6 +63,7 @@
 
         &_info {
             display: flex;
+            position: relative;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
@@ -93,16 +94,135 @@
                 justify-content: center;
                 width: 20%;
                 padding-bottom: 10px;
+                position: relative;
+           
                 i {
                     @include font-size ($p-font-sizes);
+                }
+                   
+                &_empty {
+                    display: flex;
+                    position: absolute;          
+                } 
+                &_full {
+                    display: flex;
+                    position: absolute;
+                    z-index: -1;
+                }
+                &_empty:checked {
+                    z-index: -2;
+                    @include fill; 
 
-                }
-                &:hover i {
-                    @include fill;    
-                    
-                  
-                }
+                        }   
+            
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .restaurant {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &_titre {
+            width: 100%;
+        }
+    
+        &_card {
+            justify-content: space-between;
+            width: 45%;
+            margin: 20px auto;
+
+    
+            &_img {
+                display: flex;
+                overflow: hidden;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                @include height ($card-img-height);
+    
+                img {
+                    object-fit: cover;
+                    height: auto;
+                    width: 100%;
+                }
+                &_news {
+                    display: none;
+                    position: relative;
+                    right: 8%;
+                    margin-top: 4%;
+                    padding-left: 5%;
+                    padding-right: 5%;   
+                    margin-left: auto;
+                    margin-right: auto;
+                    justify-content: center;
+                    align-items: center;
+                    align-self:inherit;
+                    @include width ($card-new-width);
+                    @include height ($card-new-height);
+                    background: $colour-tertiary;
+                    p {
+                        color: darken($colour-tertiary, 35%);
+                        @include font-size ($i-footer-and-new-font-sizes);
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .restaurant {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &_titre {
+            width: 100%;
+        }
+    
+        &_card {
+            justify-content: space-between;
+            width: 45%;
+            margin: 20px auto;
+
+    
+            &_img {
+                display: flex;
+                overflow: hidden;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                @include height ($card-img-height);
+    
+                img {
+                    object-fit: cover;
+                    height: auto;
+                    width: 100%;
+                }
+                &_news {
+                    display: none;
+                    position: relative;
+                    right: 8%;
+                    margin-top: 4%;
+                    padding-left: 5%;
+                    padding-right: 5%;   
+                    margin-left: auto;
+                    margin-right: auto;
+                    justify-content: center;
+                    align-items: center;
+                    align-self:inherit;
+                    @include width ($card-new-width);
+                    @include height ($card-new-height);
+                    background: $colour-tertiary;
+                    p {
+                        color: darken($colour-tertiary, 35%);
+                        @include font-size ($i-footer-and-new-font-sizes);
+                    }
+                }  
+            }
+        }
+    } 
 }

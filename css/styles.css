@@ -109,7 +109,7 @@ h4 {
     height: 70px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .form-localisation_container {
     height: 80px;
   }
@@ -131,7 +131,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .form-localisation_container_logo i {
     font-size: 24px;
   }
@@ -153,7 +153,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .form-localisation_container_form input {
     font-size: 24px;
   }
@@ -207,7 +207,7 @@ h4 {
     font-size: 33px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .presentation_container_titre h1 {
     font-size: 36px;
   }
@@ -229,7 +229,7 @@ h4 {
     font-size: 27px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .presentation_container_sous-titre h2 {
     font-size: 30px;
   }
@@ -255,7 +255,7 @@ h4 {
     height: 60px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .bouton {
     height: 70px;
   }
@@ -270,7 +270,7 @@ h4 {
     width: 260px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .bouton {
     width: 280px;
   }
@@ -295,7 +295,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .bouton p {
     font-size: 24px;
   }
@@ -328,12 +328,24 @@ h4 {
     font-size: 33px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_titre h1 {
     font-size: 36px;
   }
 }
 
+@media screen and (min-width: 992px) {
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav_titre {
+    width: 100%;
+  }
+}
 .nav_bouton {
   display: flex;
   align-self: center;
@@ -355,9 +367,14 @@ h4 {
     height: 90px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton {
     height: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav_bouton {
+    height: 80px;
   }
 }
 .nav_bouton:hover i {
@@ -389,7 +406,7 @@ h4 {
     height: 26px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_rond {
     height: 28px;
   }
@@ -404,7 +421,7 @@ h4 {
     width: 26px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_rond {
     width: 28px;
   }
@@ -422,7 +439,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_rond p {
     font-size: 24px;
   }
@@ -446,12 +463,12 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_logo i {
     font-size: 24px;
   }
 }
-.nav_bouton_h3 {
+.nav_bouton_p {
   font-size: 18px;
   display: flex;
   width: auto;
@@ -462,21 +479,29 @@ h4 {
   font-weight: 600;
 }
 @media screen and (min-width: 400px) {
-  .nav_bouton_h3 {
+  .nav_bouton_p {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 650px) {
-  .nav_bouton_h3 {
+  .nav_bouton_p {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .nav_bouton_h3 {
+@media screen and (min-width: 768px) {
+  .nav_bouton_p {
     font-size: 24px;
   }
 }
 
+@media screen and (min-width: 992px) {
+  .nav_bouton {
+    width: 30%;
+  }
+  .nav_bouton_p {
+    font-size: 20px;
+  }
+}
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -505,7 +530,7 @@ h4 {
     font-size: 33px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_titre h1 {
     font-size: 36px;
   }
@@ -526,10 +551,15 @@ h4 {
 }
 @media screen and (min-width: 650px) {
   .restaurant_card {
-    height: 375px;
+    height: 380px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .restaurant_card {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 992px) {
   .restaurant_card {
     height: 400px;
   }
@@ -551,7 +581,12 @@ h4 {
     height: 75%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 992px) {
   .restaurant_card_img {
     height: 75%;
   }
@@ -587,9 +622,14 @@ h4 {
     width: 85px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_card_img_news {
     width: 90px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant_card_img_news {
+    width: 100px;
   }
 }
 @media screen and (min-width: 400px) {
@@ -602,9 +642,14 @@ h4 {
     height: 32px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_card_img_news {
     height: 34px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant_card_img_news {
+    height: 36px;
   }
 }
 .restaurant_card_img_news p {
@@ -621,13 +666,14 @@ h4 {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_card_img_news p {
     font-size: 20px;
   }
 }
 .restaurant_card_info {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -643,7 +689,12 @@ h4 {
     height: 25%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .restaurant_card_info {
+    height: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
   .restaurant_card_info {
     height: 25%;
   }
@@ -669,7 +720,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_card_info_texte h3 {
     font-size: 24px;
   }
@@ -689,7 +740,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_card_info_texte p {
     font-size: 24px;
   }
@@ -700,6 +751,7 @@ h4 {
   justify-content: center;
   width: 20%;
   padding-bottom: 10px;
+  position: relative;
 }
 .restaurant_card_info_logo i {
   font-size: 18px;
@@ -714,19 +766,285 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant_card_info_logo i {
     font-size: 24px;
   }
 }
-.restaurant_card_info_logo:hover i {
+.restaurant_card_info_logo_empty {
+  display: flex;
+  position: absolute;
+}
+.restaurant_card_info_logo_full {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+.restaurant_card_info_logo_empty:checked {
+  z-index: -2;
   transform-origin: bottom;
+  opacity: 1;
   transform: scaleZ(0);
   transition: transform 4000ms;
-  font-weight: 1000;
-  color: #9356DC;
+  background: #9356DC;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant_titre {
+    width: 100%;
+  }
+  .restaurant_card {
+    justify-content: space-between;
+    width: 45%;
+    margin: 20px auto;
+  }
+  .restaurant_card_img {
+    display: flex;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 992px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurant_card_img img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurant_card_img_news {
+    display: none;
+    position: relative;
+    right: 8%;
+    margin-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: inherit;
+    width: 75px;
+    height: 28px;
+    background: #99E2D0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img_news {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img_news {
+    width: 85px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img_news {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 992px) {
+  .restaurant_card_img_news {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img_news {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img_news {
+    height: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img_news {
+    height: 34px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 992px) {
+  .restaurant_card_img_news {
+    height: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurant_card_img_news p {
+    color: #2c9c81;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img_news p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img_news p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img_news p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant_titre {
+    width: 100%;
+  }
+  .restaurant_card {
+    justify-content: space-between;
+    width: 45%;
+    margin: 20px auto;
+  }
+  .restaurant_card_img {
+    display: flex;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurant_card_img {
+    height: 75%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant_card_img img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant_card_img_news {
+    display: none;
+    position: relative;
+    right: 8%;
+    margin-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: inherit;
+    width: 75px;
+    height: 28px;
+    background: #99E2D0;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img_news {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img_news {
+    width: 85px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img_news {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurant_card_img_news {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img_news {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img_news {
+    height: 32px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img_news {
+    height: 34px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurant_card_img_news {
+    height: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant_card_img_news p {
+    color: #2c9c81;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 400px) {
+  .restaurant_card_img_news p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 650px) {
+  .restaurant_card_img_news p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 768px) {
+  .restaurant_card_img_news p {
+    font-size: 20px;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;
@@ -774,7 +1092,7 @@ h4 {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .footer_texte_logo i {
     font-size: 20px;
   }

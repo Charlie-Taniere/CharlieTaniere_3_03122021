@@ -212,7 +212,7 @@ h4 {
     height: 60px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .bouton {
     height: 70px;
   }
@@ -227,7 +227,7 @@ h4 {
     width: 260px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .bouton {
     width: 280px;
   }
@@ -252,7 +252,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .bouton p {
     font-size: 24px;
   }
@@ -285,12 +285,24 @@ h4 {
     font-size: 33px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_titre h1 {
     font-size: 36px;
   }
 }
 
+@media screen and (min-width: 992px) {
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav_titre {
+    width: 100%;
+  }
+}
 .nav_bouton {
   display: flex;
   align-self: center;
@@ -312,9 +324,14 @@ h4 {
     height: 90px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton {
     height: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav_bouton {
+    height: 80px;
   }
 }
 .nav_bouton:hover i {
@@ -346,7 +363,7 @@ h4 {
     height: 26px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_rond {
     height: 28px;
   }
@@ -361,7 +378,7 @@ h4 {
     width: 26px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_rond {
     width: 28px;
   }
@@ -379,7 +396,7 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_rond p {
     font-size: 24px;
   }
@@ -403,12 +420,12 @@ h4 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .nav_bouton_logo i {
     font-size: 24px;
   }
 }
-.nav_bouton_h3 {
+.nav_bouton_p {
   font-size: 18px;
   display: flex;
   width: auto;
@@ -419,21 +436,29 @@ h4 {
   font-weight: 600;
 }
 @media screen and (min-width: 400px) {
-  .nav_bouton_h3 {
+  .nav_bouton_p {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 650px) {
-  .nav_bouton_h3 {
+  .nav_bouton_p {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .nav_bouton_h3 {
+@media screen and (min-width: 768px) {
+  .nav_bouton_p {
     font-size: 24px;
   }
 }
 
+@media screen and (min-width: 992px) {
+  .nav_bouton {
+    width: 30%;
+  }
+  .nav_bouton_p {
+    font-size: 20px;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;
@@ -481,7 +506,7 @@ h4 {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .footer_texte_logo i {
     font-size: 20px;
   }
