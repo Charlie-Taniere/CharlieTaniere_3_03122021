@@ -1,7 +1,7 @@
 /* Typographie responsive */ 
 
 $breakpoints: (
-  smaller : 400px,
+  smaller : 410px,
   small: 650px, 
   medium : 768px,
   large : 992px
@@ -14,11 +14,27 @@ $p-font-sizes: (
   medium : 24px
 );
 
-$i-footer-and-new-font-sizes: (
-  null  : 14px,
+$p-menu-font-sizes: (
+  null  : 16px,
   smaller : 16px,
-  small: 18px,
-  medium : 20px
+  small: 20px,
+  medium : 24px,
+  large : 30px
+);
+
+$p-menu-ingredient-font-sizes: (
+  null  : 13px,
+  smaller : 13px,
+  small: 17px,
+  medium : 21px,
+  large : 27px
+);
+
+$i-footer-and-new-font-sizes: (
+  null  : 18px,
+  smaller : 20px,
+  small: 22px,
+  medium : 24px
 );
 
 $i-footer-font-sizes: (
@@ -35,11 +51,26 @@ $h1-font-sizes: (
   medium : 36px
 );
 
+$h1-page-font-sizes: (
+  null  : 24px,
+  smaller : 30px,
+  small: 34px,
+  medium : 40px,
+  large : 46px
+);
+
 $h2-font-sizes: (
   null  : 20px,
   smaller : 25px,
   small: 27px,
   medium : 30px
+);
+
+$h2-page-font-sizes: (
+  null  : 16px,
+  small : 16px,
+  medium: 18px,
+  large : 20px
 );
 
 $h3-font-sizes: (
@@ -147,6 +178,16 @@ $rond-width: (
 $card-new-width: (
   null  : 75px,
   smaller : 80px,
+  small: 85px,
+  medium : 90px,
+  large : 100px
+);
+
+/* Margin-top menu responsive */ 
+
+$menu-top-margin: (
+  null  : -70px,
+  smaller : -70px,
   small: 85px,
   medium : 90px,
   large : 100px

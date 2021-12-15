@@ -8,6 +8,9 @@
     background-color: $colour-background;
     box-shadow: 3px 2px 2px darken($colour-background, 10%);
     border-radius: 20px;
+    @media screen and (min-width: 992px) {
+        width: 30%;
+    }
     &:hover i{
         color: $colour-primary;
     }
@@ -38,7 +41,7 @@
         padding-left: 25px;
         color: #7e7e7e;
         i {
-            @include font-size ($p-font-sizes);
+            @include font-size ($i-footer-and-new-font-sizes);
         }
     }
 
@@ -51,15 +54,9 @@
         padding-left: 25px;
         color: #353535;
         font-weight: 600;
+        @media screen and (min-width: 992px) {
+            font-size: 20px;
+        }
     }
 }   
 
-@media screen and (min-width: 992px) {
-    .nav_bouton {
-        width: 30%;
-        &_p {
-            font-size: 20px;
-        }
-
-    }
-}

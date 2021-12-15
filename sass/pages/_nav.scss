@@ -9,25 +9,23 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-   &_titre {
-       display: flex;
-       h1 {
-       @include font-size ($h1-font-sizes);
-       }
-   } 
-}
-
-
-@media screen and (min-width: 992px) {
-    .nav {
+    @media screen and (min-width: 992px) {
         flex-direction: row;
         flex-wrap: wrap;
         max-width: none;
         width: 100%;
         justify-content: space-between;
-        &_titre {
-            
+    }
+
+    &_titre {
+        display: flex;
+
+        @media screen and (min-width: 992px) {
             width: 100%;
+        }
+
+        h1 {
+            @include font-size ($h1-font-sizes);
         }
     }
 }

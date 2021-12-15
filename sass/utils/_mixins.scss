@@ -51,6 +51,23 @@
       }
     }
   }
+  @mixin margin-top($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-margin in $fs-map {
+      @if $fs-breakpoint == null {
+        margin-top: $fs-margin;
+      }
+      @else {
+        // If $fs-font-size is a key that exists in
+        // $fs-breakpoints, use the value
+        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+        }
+        @media screen and (min-width: $fs-breakpoint) {
+          margin-top: $fs-margin;
+        }
+      }
+    }
+  }
 
 
 @mixin bouton {
@@ -69,15 +86,15 @@
     position: absolute;
     left: 7%;
     i {
+      @include font-size($i-footer-and-new-font-sizes);
         color: #353535;
     }
       
 }
 @mixin fill {
 transform-origin: bottom;
-opacity: 1;
 transform: scaleZ(0);
-transition: transform 4000ms;
-background: $colour-primary;
+opacity: 1;
+color: $colour-primary;
 }
 
