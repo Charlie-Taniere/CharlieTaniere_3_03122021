@@ -23,7 +23,6 @@
             justify-content: space-between;
             padding-top: 25px;
 
-
             &_titre {
                 width: 80%;
 
@@ -31,7 +30,6 @@
                     font-weight: 200;
                     @include font-size ($h1-page-font-sizes);
                     font-family: "Shrikhand";
-
                 }
             }
 
@@ -42,7 +40,6 @@
                 i {
                     @include font-size ($p-font-sizes);
                 }
-
             }
         }
 
@@ -73,7 +70,7 @@
         &_menu {
             display: flex;
             flex-direction: row;
-            height: auto;
+            height: 65px;
             justify-content: space-between;
             border: solid 3px black;
             border-radius: 15px;
@@ -83,69 +80,96 @@
             padding-top: 5px;
             padding-bottom: 5px;
             margin-top: 25px;
-            &_nom p{
-             
+            position: relative;
+
+            &_nom p {
+
                 @include font-size ($p-menu-font-sizes);
                 font-weight: 500;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
 
             &_libele {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                width: auto;
+                width: 80%;
+                overflow: hidden;
+            }
 
-                &_detail {
-                    display: flex;
-                    justify-content: space-between;
+            &_detail {
+                display: flex;
+                justify-content: space-between;
 
-                    &_ingredient p {
-                        color: #676767;
-                        @include font-size ($p-menu-ingredient-font-sizes);
-                        font-weight: 400;
-                    }
+                &_ingredient p {
+                    color: #676767;
+                    @include font-size ($p-menu-ingredient-font-sizes);
+                    font-weight: 400;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
             }
 
             &_prix {
                 display: flex;
                 flex-direction: row;
-                align-items:flex-end;
+                align-items: flex-end;
+
                 p {
 
-                @include font-size ($p-menu-ingredient-font-sizes);
-                font-weight: bold;
-                color: #3d3d3d;
+                    @include font-size ($p-menu-ingredient-font-sizes);
+                    font-weight: bold;
+                    color: #3d3d3d;
+                }
             }
-        }
 
-
-            &_animation-point {
-                display: flex;
-                flex-direction: row;
-                width: 1px;
-                height: 50px;
-                background: green;
-
-            }
             &_animation-deroulant {
                 display: flex;
-                width: 1px;
+                justify-content: center;
+                width: 0px;
                 height: auto;
-                background: red;
-                position: absolute;
-                left: 95%;
+                margin-right: -21px;
+                margin-top: -6px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
 
+                i {
+                    display: flex;
+                    font-size: 0px;
+                    align-items: center;
+                    color: white;
+                    transform: rotate(-90deg);
+                    animation-delay: 0.1s;
+                    transition: transform 1s ease-in-out;
+                }
             }
         }
 
-        &_menu:hover+&_animation {}
+        &_menu:hover .menu_container_menu_animation-deroulant {
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            width: 50px;
+            height: 60px;
+            background: $colour-tertiary;
+            margin-top: -5px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin-left: 20px;
 
+            i {
 
+                @include font-size ($p-font-sizes);
+                transform: rotate(0deg);
+            }
+        }
     }
 }
 
 .container_bouton {
     display: flex;
     justify-content: center;
+    margin: 35px 0;
 }
