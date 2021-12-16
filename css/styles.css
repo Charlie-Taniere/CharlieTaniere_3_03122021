@@ -1,3 +1,16 @@
+@keyframes progress-bar {
+  0% {
+    background: #99E2D0;
+    transform: right(0);
+  }
+  25% {
+    background: #99E2D0;
+    transform: left(1);
+  }
+  100% {
+    background: white;
+  }
+}
 /* Typographie responsive */
 /* Height responsive */
 /* Width responsive */
@@ -256,10 +269,12 @@ h4 {
   box-shadow: 3px 2px 2px #dddddd;
   display: flex;
   height: 40px;
-  width: 220px;
+  width: auto;
+  min-width: 170px;
   margin: 20px;
   padding: 25px 20px;
   border-radius: 25px;
+  justify-content: center;
 }
 @media screen and (min-width: 410px) {
   .bouton {
@@ -274,21 +289,6 @@ h4 {
 @media screen and (min-width: 768px) {
   .bouton {
     height: 70px;
-  }
-}
-@media screen and (min-width: 410px) {
-  .bouton {
-    width: 240px;
-  }
-}
-@media screen and (min-width: 650px) {
-  .bouton {
-    width: 260px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .bouton {
-    width: 280px;
   }
 }
 .bouton:hover {

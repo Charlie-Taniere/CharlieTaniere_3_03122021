@@ -2,10 +2,13 @@
     @include bouton;
     display: flex;
     @include height ($bouton-height);
-    @include width ($bouton-width);
+    width: auto;
+    min-width: 170px;
+    // @include width ($bouton-width);
     margin: 20px;
     padding: 25px 20px;
     border-radius: 25px;
+    justify-content: center;
     &:hover {
         background: linear-gradient(
             356deg,

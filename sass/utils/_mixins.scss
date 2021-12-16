@@ -98,3 +98,27 @@ opacity: 1;
 color: $colour-primary;
 }
 
+@mixin check {
+transform-origin: center right;
+  animation-name: progress-bar; 
+  animation-duration: 4000ms;
+}
+
+@keyframes progress-bar {
+0% {
+  background: $colour-tertiary;
+  transform: right(0);
+}
+25% {
+  background: $colour-tertiary;
+  transform: left(1);
+}
+100% {
+  background: white;
+}  
+}
+@mixin prix {
+animation: gradient 15s ease infinite;
+  transition: transform 4000ms;
+  margin-right: 50px;
+}
