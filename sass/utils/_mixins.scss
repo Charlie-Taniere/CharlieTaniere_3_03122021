@@ -104,21 +104,17 @@ transform-origin: center right;
   animation-duration: 4000ms;
 }
 
-@keyframes progress-bar {
-0% {
-  background: $colour-tertiary;
-  transform: right(0);
-}
-25% {
-  background: $colour-tertiary;
-  transform: left(1);
-}
-100% {
-  background: white;
-}  
-}
-@mixin prix {
-animation: gradient 15s ease infinite;
-  transition: transform 4000ms;
-  margin-right: 50px;
+@keyframes FadeIn { 
+  0% {
+    opacity: 0;
+    transform: scale(.1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -42,6 +42,10 @@
                 }
             }
         }
+        
+        &_animation {
+        animation: FadeIn 1s linear;
+         animation-fill-mode: both;     
 
         &_list {
             display: flex;
@@ -66,6 +70,10 @@
                 border-bottom: 4px solid $colour-tertiary;
             }
         }
+    }
+    .menu_container_animation:nth-child(1) { animation-delay: .5s }
+    .menu_container_animation:nth-child(2) { animation-delay: 1s }
+    .menu_container_animation:nth-child(3) { animation-delay: 1.5s }
 
         &_menu {
             display: flex;
@@ -81,7 +89,8 @@
             padding-bottom: 5px;
             margin-top: 25px;
             position: relative;
-
+          
+         
             &_nom p {
 
                 @include font-size ($p-menu-font-sizes);
@@ -173,3 +182,4 @@
     justify-content: center;
     margin: 35px 0;
 }
+
