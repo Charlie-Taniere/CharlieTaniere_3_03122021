@@ -92,8 +92,8 @@
       
 }
 @mixin fill {
-transform-origin: bottom;
-transform: scaleZ(0);
+
+transform: scaleZ(1);
 opacity: 1;
 color: $colour-primary;
 }

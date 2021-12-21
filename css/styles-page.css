@@ -224,7 +224,9 @@ h4 {
 }
 .menu_container_titre_logo {
   align-self: center;
-  padding-right: 5%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  position: relative;
 }
 .menu_container_titre_logo i {
   font-size: 18px;
@@ -243,6 +245,27 @@ h4 {
   .menu_container_titre_logo i {
     font-size: 24px;
   }
+}
+.menu_container_titre_logo_empty {
+  display: flex;
+  position: absolute;
+  opacity: 1;
+}
+.menu_container_titre_logo_full {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+}
+.menu_container_titre_logo_empty:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.menu_container_titre_logo_full:hover {
+  cursor: pointer;
+  transform: scaleZ(1);
+  opacity: 1;
+  color: #9356DC;
+  transition: transform 4000ms, opacity 4000ms;
 }
 .menu_container_animation {
   animation: FadeIn 1s linear;
@@ -338,11 +361,11 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 81%;
+  width: 90%;
   overflow: hidden;
 }
 .menu_container_menu_libele_nom p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -350,7 +373,7 @@ h4 {
 }
 @media screen and (min-width: 410px) {
   .menu_container_menu_libele_nom p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 650px) {
@@ -483,6 +506,9 @@ h4 {
   .menu_container_menu:hover .menu_container_menu_animation-deroulant {
     height: 100px;
   }
+}
+.menu_container_menu:hover .menu_container_menu_animation-deroulant_menu_container_menu_prix {
+  padding-left: 10px;
 }
 .menu_container_menu:hover .menu_container_menu_animation-deroulant i {
   font-size: 18px;
