@@ -4,7 +4,8 @@ $breakpoints: (
   smaller : 410px,
   small: 650px, 
   medium : 768px,
-  large : 992px
+  large : 992px,
+  menu : 500px
 );
 
 $p-font-sizes: (
@@ -157,6 +158,14 @@ $img-menu-height: (
   small: 350px,
   medium : 400px,
   large : 450px
+);
+
+$card-menu-height: (
+  null  : 65px,
+  smaller : 65px,
+  small: 70px,
+  medium : 85px,
+  large : 100px
 );
 
 /* Width responsive */ 

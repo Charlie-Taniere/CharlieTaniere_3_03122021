@@ -40,10 +40,6 @@ a:visited {
 }
 
 @font-face {
-  font-family: "Shrikhand";
-  src: url(css\f ontsShrikhand-Regular.ttf);
-}
-@font-face {
   font-family: "Roboto";
   src: url(css\f ontsRoboto-Black.ttf);
   src: url(css\f ontsRoboto-Medium.ttf);
@@ -301,8 +297,9 @@ h4 {
   display: flex;
   flex-direction: row;
   height: 65px;
+  max-width: 450px;
   justify-content: space-between;
-  border: solid 3px black;
+  box-shadow: 3px 2px 2px #dddddd;
   border-radius: 15px;
   background: white;
   padding-left: 10px;
@@ -312,7 +309,39 @@ h4 {
   margin-top: 25px;
   position: relative;
 }
-.menu_container_menu_nom p {
+@media screen and (min-width: 410px) {
+  .menu_container_menu {
+    height: 65px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .menu_container_menu {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu_container_menu {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_container_menu {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu_container_menu {
+    max-width: 650px;
+  }
+}
+.menu_container_menu_libele {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 81%;
+  overflow: hidden;
+}
+.menu_container_menu_libele_nom p {
   font-size: 16px;
   font-weight: 500;
   overflow: hidden;
@@ -320,37 +349,34 @@ h4 {
   white-space: nowrap;
 }
 @media screen and (min-width: 410px) {
-  .menu_container_menu_nom p {
+  .menu_container_menu_libele_nom p {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 650px) {
-  .menu_container_menu_nom p {
+  .menu_container_menu_libele_nom p {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu_container_menu_nom p {
+  .menu_container_menu_libele_nom p {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
-  .menu_container_menu_nom p {
+  .menu_container_menu_libele_nom p {
     font-size: 30px;
   }
 }
-.menu_container_menu_libele {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 80%;
-  overflow: hidden;
-}
-.menu_container_menu_detail {
+.menu_container_menu_libele_detail {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
-.menu_container_menu_detail_ingredient p {
+.menu_container_menu_libele_detail_ingredient {
+  overflow: hidden;
+}
+.menu_container_menu_libele_detail_ingredient p {
   color: #676767;
   font-size: 13px;
   font-weight: 400;
@@ -359,22 +385,22 @@ h4 {
   white-space: nowrap;
 }
 @media screen and (min-width: 410px) {
-  .menu_container_menu_detail_ingredient p {
+  .menu_container_menu_libele_detail_ingredient p {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 650px) {
-  .menu_container_menu_detail_ingredient p {
+  .menu_container_menu_libele_detail_ingredient p {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu_container_menu_detail_ingredient p {
+  .menu_container_menu_libele_detail_ingredient p {
     font-size: 21px;
   }
 }
 @media screen and (min-width: 992px) {
-  .menu_container_menu_detail_ingredient p {
+  .menu_container_menu_libele_detail_ingredient p {
     font-size: 27px;
   }
 }
@@ -430,13 +456,33 @@ h4 {
 .menu_container_menu:hover .menu_container_menu_animation-deroulant {
   overflow: hidden;
   transition: 0.6s ease-in-out;
-  width: 50px;
-  height: 60px;
+  width: 25%;
+  height: 65px;
   background: #99E2D0;
   margin-top: -5px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-left: 20px;
+}
+@media screen and (min-width: 410px) {
+  .menu_container_menu:hover .menu_container_menu_animation-deroulant {
+    height: 65px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .menu_container_menu:hover .menu_container_menu_animation-deroulant {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu_container_menu:hover .menu_container_menu_animation-deroulant {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_container_menu:hover .menu_container_menu_animation-deroulant {
+    height: 100px;
+  }
 }
 .menu_container_menu:hover .menu_container_menu_animation-deroulant i {
   font-size: 18px;
