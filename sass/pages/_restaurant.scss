@@ -70,17 +70,19 @@
                 @include width ($card-new-width);
                 @include height ($card-new-height);
                 background: $colour-tertiary;
+
                 @media screen and (min-width: 768px) {
                     right: 53.2%;
                     margin-top: 15px;
                 }
+
                 p {
                     color: darken($colour-tertiary, 35%);
                     @include font-size ($i-footer-and-new-font-sizes);
                 }
 
-                
             }
+
             &_news-b {
                 display: flex;
                 position: absolute;
@@ -101,7 +103,6 @@
                     color: darken($colour-tertiary, 35%);
                     @include font-size ($i-footer-and-new-font-sizes);
                 }
-                
             }
         }
 
@@ -165,12 +166,8 @@
                     cursor: pointer;
                     @include fill;
                     transition: transform 4000ms, opacity 4000ms;
-                    
-
                 }
-
             }
         }
     }
 }
-

@@ -1,110 +1,123 @@
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
-    @each $fs-breakpoint, $fs-font-size in $fs-map {
-      @if $fs-breakpoint == null {
+
+  @each $fs-breakpoint,
+  $fs-font-size in $fs-map {
+    @if $fs-breakpoint==null {
+      font-size: $fs-font-size;
+    }
+
+    @else {
+
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+
+      @media screen and (min-width: $fs-breakpoint) {
         font-size: $fs-font-size;
       }
-      @else {
-        // If $fs-font-size is a key that exists in
-        // $fs-breakpoints, use the value
-        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-        }
-        @media screen and (min-width: $fs-breakpoint) {
-          font-size: $fs-font-size;
-        }
-      }
     }
   }
+}
 
-  @mixin height($fs-map, $fs-breakpoints: $breakpoints) {
-    @each $fs-breakpoint, $fs-height in $fs-map {
-      @if $fs-breakpoint == null {
+@mixin height($fs-map, $fs-breakpoints: $breakpoints) {
+
+  @each $fs-breakpoint,
+  $fs-height in $fs-map {
+    @if $fs-breakpoint==null {
+      height: $fs-height;
+    }
+
+    @else {
+
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+
+      @media screen and (min-width: $fs-breakpoint) {
         height: $fs-height;
       }
-      @else {
-        // If $fs-font-size is a key that exists in
-        // $fs-breakpoints, use the value
-        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-        }
-        @media screen and (min-width: $fs-breakpoint) {
-          height: $fs-height;
-        }
-      }
     }
   }
+}
 
-  @mixin width($fs-map, $fs-breakpoints: $breakpoints) {
-    @each $fs-breakpoint, $fs-width in $fs-map {
-      @if $fs-breakpoint == null {
+@mixin width($fs-map, $fs-breakpoints: $breakpoints) {
+
+  @each $fs-breakpoint,
+  $fs-width in $fs-map {
+    @if $fs-breakpoint==null {
+      width: $fs-width;
+    }
+
+    @else {
+
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+
+      @media screen and (min-width: $fs-breakpoint) {
         width: $fs-width;
       }
-      @else {
-        // If $fs-font-size is a key that exists in
-        // $fs-breakpoints, use the value
-        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-        }
-        @media screen and (min-width: $fs-breakpoint) {
-          width: $fs-width;
-        }
-      }
     }
   }
-  @mixin margin-top($fs-map, $fs-breakpoints: $breakpoints) {
-    @each $fs-breakpoint, $fs-margin in $fs-map {
-      @if $fs-breakpoint == null {
+}
+
+@mixin margin-top($fs-map, $fs-breakpoints: $breakpoints) {
+
+  @each $fs-breakpoint,
+  $fs-margin in $fs-map {
+    @if $fs-breakpoint==null {
+      margin-top: $fs-margin;
+    }
+
+    @else {
+
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+
+      @media screen and (min-width: $fs-breakpoint) {
         margin-top: $fs-margin;
       }
-      @else {
-        // If $fs-font-size is a key that exists in
-        // $fs-breakpoints, use the value
-        @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-          $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-        }
-        @media screen and (min-width: $fs-breakpoint) {
-          margin-top: $fs-margin;
-        }
-      }
     }
   }
-
+}
 
 @mixin bouton {
-    background: linear-gradient(
-        356deg,
-        rgba(155, 89, 220, 1) 0%,
-        rgba(167, 127, 216, 1) 33%,
-        rgba(255, 121, 218, 1) 100%);
-    box-shadow: 3px 2px 2px darken($colour-background, 10%); 
+  background: linear-gradient(356deg,
+      rgba(155, 89, 220, 1) 0%,
+      rgba(167, 127, 216, 1) 33%,
+      rgba(255, 121, 218, 1) 100%);
+  box-shadow: 3px 2px 2px darken($colour-background, 10%);
 }
 
 @mixin arrow {
-    display: flex;
-    justify-self: left;
-    align-self: center;
-    position: absolute;
-    left: 7%;
-    i {
-      @include font-size($i-footer-and-new-font-sizes);
-        color: #353535;
-    }
-      
+  display: flex;
+  justify-self: left;
+  align-self: center;
+  position: absolute;
+  left: 7%;
+
+  i {
+    @include font-size($i-footer-and-new-font-sizes);
+    color: #353535;
+  }
+
 }
+
 @mixin fill {
 
-transform: scaleZ(1);
-opacity: 1;
-color: $colour-primary;
+  transform: scaleZ(1);
+  opacity: 1;
+  color: $colour-primary;
 }
 
 @mixin check {
-transform-origin: center right;
-  animation-name: progress-bar; 
+  transform-origin: center right;
+  animation-name: progress-bar;
   animation-duration: 4000ms;
 }
 
-@keyframes FadeIn { 
+@keyframes FadeIn {
   0% {
     opacity: 0;
     transform: scale(.1);
@@ -114,6 +127,7 @@ transform-origin: center right;
     opacity: 1;
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }

@@ -33,7 +33,6 @@
                 }
             }
 
-
         &_logo {
                  align-self: center;
                 padding-right: 10%;
@@ -65,20 +64,14 @@
                     cursor: pointer;
                     @include fill;
                     transition: transform 4000ms, opacity 4000ms;
-                    
-
                 }
-
             }
-
-
         }
 
         &_animation {
             animation: FadeIn 1s linear;
             animation-fill-mode: both;
             
-
             &_list {
                 display: flex;
                 padding-top: 35px;
@@ -167,11 +160,7 @@
                         white-space: nowrap;
                     }
                 }
-
-
             }
-
-
 
             &_prix {
                 display: flex;
@@ -183,8 +172,7 @@
                     @include font-size ($p-menu-ingredient-font-sizes);
                     font-weight: bold;
                     color: #3d3d3d;
-                }
-               
+                } 
             }
 
             &_animation-deroulant {
@@ -230,7 +218,6 @@
                 transform: rotate(0deg);
             }
         }
-        
     }
 }
 
