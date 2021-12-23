@@ -70,7 +70,7 @@
 
         &_animation {
             animation: FadeIn 1s linear;
-            animation-fill-mode: both;
+            // animation-fill-mode: both;
             
             &_list {
                 display: flex;
@@ -97,16 +97,16 @@
             }
         }
 
-        .menu_container_animation:nth-child(1) {
+        .menu_container:nth-child(1) {
             animation-delay: .5s
         }
 
-        .menu_container_animation:nth-child(2) {
-            animation-delay: 1s
+        .menu_container:nth-child(2) {
+            animation-delay: 5s
         }
 
-        .menu_container_animation:nth-child(3) {
-            animation-delay: 1.5s
+        .menu_container:nth-child(3) {
+            animation-delay: 7.5s
         }
 
         &_menu {
@@ -208,8 +208,8 @@
             border-bottom-right-radius: 15px;
             margin-left: 20px;
             
-            &_menu_container_menu_prix {
-                padding-left: 10px;
+            &_container_menu_prix {
+                margin-left: 10px;
             }
 
             i {

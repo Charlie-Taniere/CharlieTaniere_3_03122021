@@ -269,7 +269,6 @@ h4 {
 }
 .menu_container_animation {
   animation: FadeIn 1s linear;
-  animation-fill-mode: both;
 }
 .menu_container_animation_list {
   display: flex;
@@ -307,14 +306,14 @@ h4 {
   right: 40%;
   border-bottom: 4px solid #99E2D0;
 }
-.menu_container .menu_container_animation:nth-child(1) {
+.menu_container .menu_container:nth-child(1) {
   animation-delay: 0.5s;
 }
-.menu_container .menu_container_animation:nth-child(2) {
-  animation-delay: 1s;
+.menu_container .menu_container:nth-child(2) {
+  animation-delay: 5s;
 }
-.menu_container .menu_container_animation:nth-child(3) {
-  animation-delay: 1.5s;
+.menu_container .menu_container:nth-child(3) {
+  animation-delay: 7.5s;
 }
 .menu_container_menu {
   display: flex;
@@ -507,8 +506,8 @@ h4 {
     height: 100px;
   }
 }
-.menu_container_menu:hover .menu_container_menu_animation-deroulant_menu_container_menu_prix {
-  padding-left: 10px;
+.menu_container_menu:hover .menu_container_menu_animation-deroulant_container_menu_prix {
+  margin-left: 10px;
 }
 .menu_container_menu:hover .menu_container_menu_animation-deroulant i {
   font-size: 18px;
