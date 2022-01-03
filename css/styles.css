@@ -41,10 +41,10 @@ a:visited {
 
 @font-face {
   font-family: "Roboto";
-  src: url(css\f ontsRoboto-Black.ttf);
-  src: url(css\f ontsRoboto-Medium.ttf);
-  src: url(css\f ontsRoboto-Light.ttf);
-  src: url(css\f ontsRoboto-Thin.ttf);
+  src: url(css/Fonts/Roboto-Black.ttf);
+  src: url(css/Fonts/Roboto-Medium.ttf);
+  src: url(css/Fonts/Roboto-Light.ttf);
+  src: url(css/Fonts/Roboto-Thin.ttf);
 }
 * {
   font-family: "Roboto", "Shrikhand", Arial, Helvetica, sans-serif;
