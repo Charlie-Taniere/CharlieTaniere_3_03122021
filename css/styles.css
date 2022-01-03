@@ -271,7 +271,7 @@ h4 {
 }
 .presentation_container_titre h1 {
   display: flex;
-  font-size: 28px;
+  font-size: 24px;
 }
 @media screen and (min-width: 410px) {
   .presentation_container_titre h1 {
@@ -397,7 +397,7 @@ h4 {
   }
 }
 .nav_titre h1 {
-  font-size: 28px;
+  font-size: 24px;
 }
 @media screen and (min-width: 410px) {
   .nav_titre h1 {
@@ -600,7 +600,7 @@ h4 {
   }
 }
 .restaurant_titre h1 {
-  font-size: 28px;
+  font-size: 24px;
 }
 @media screen and (min-width: 410px) {
   .restaurant_titre h1 {
