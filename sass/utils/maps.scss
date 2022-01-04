@@ -44,6 +44,14 @@ $i-search-font-sizes: (
   medium : 24px
 );
 
+$i-arrow-font-sizes: (
+  null  : 15px,
+  smaller : 19px,
+  small: 22px,
+  medium : 24px,
+  large: 28px
+);
+
 $i-nav-font-sizes: (
   null  : 16px,
   smaller : 18px,
@@ -138,7 +146,7 @@ $bouton-height: (
   null  : 40px,
   smaller : 50px,
   small: 60px,
-  medium : 70px
+  medium : 70px,
 );
 
 $nav-height: (

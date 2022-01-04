@@ -84,22 +84,27 @@ h5 {
   left: 7%;
 }
 .header_arrow i {
-  font-size: 12px;
+  font-size: 15px;
   color: #353535;
 }
 @media screen and (min-width: 410px) {
   .header_arrow i {
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 650px) {
   .header_arrow i {
-    font-size: 17px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 768px) {
   .header_arrow i {
-    font-size: 20px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header_arrow i {
+    font-size: 28px;
   }
 }
 .header_logo {
@@ -509,7 +514,7 @@ h5 {
     height: 90px;
   }
 }
-.menu_container_menu:hover .menu_container_menu_animation-deroulant_container_menu_prix {
+.menu_container_menu:hover .menu_container_menu_animation-deroulant .container_menu_prix {
   margin-left: 10px;
 }
 .menu_container_menu:hover .menu_container_menu_animation-deroulant i {
