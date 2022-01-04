@@ -10,7 +10,7 @@
         padding-right: 20px;
         color:#353535;
         i {
-            @include font-size ($i-footer-and-new-font-sizes);       
+            @include font-size ($i-search-font-sizes);       
         }
     }
 
@@ -18,7 +18,7 @@
         border-style: none;
         background-color: $form-background;
         font-weight: 500;
-        @include font-size ($h3-font-sizes);
+        @include font-size ($p-form-font-sizes);
         width: 155px;
     }
     

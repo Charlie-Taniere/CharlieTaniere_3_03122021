@@ -7,10 +7,17 @@ $breakpoints: (
   large : 992px
 );
 
+$p-form-font-sizes: (
+  null  : 14px,
+  smaller : 18px,
+  small: 20px,
+  medium : 20px
+);
+
 $p-font-sizes: (
-  null  : 18px,
-  smaller : 20px,
-  small: 22px,
+  null  : 14px,
+  smaller : 18px,
+  small: 20px,
   medium : 24px
 );
 
@@ -30,24 +37,46 @@ $p-menu-ingredient-font-sizes: (
   large : 27px
 );
 
-$i-footer-and-new-font-sizes: (
-  null  : 18px,
-  smaller : 20px,
+$i-search-font-sizes: (
+  null  : 15px,
+  smaller : 17px,
+  small: 20px,
+  medium : 24px
+);
+
+$i-nav-font-sizes: (
+  null  : 16px,
+  smaller : 18px,
   small: 22px,
   medium : 24px
 );
 
+$i-heart-font-sizes: (
+  null  : 18px,
+  smaller : 20px,
+  small: 22px,
+  medium : 24px,
+  large : 26px
+);
+
+$i-footer-and-new-font-sizes: (
+  null  : 12px,
+  smaller : 15px,
+  small: 17px,
+  medium : 20px
+);
+
 $i-footer-font-sizes: (
-  null  : 14px,
-  smaller : 16px,
+  null  : 18px,
+  smaller : 20px,
   small: 18px,
   medium : 20px
 );
 
 $h1-font-sizes: (
-  null  : 24px,
-  smaller : 31px,
-  small: 33px,
+  null  : 21px,
+  smaller : 28px,
+  small: 30px,
   medium : 36px
 );
 
@@ -60,31 +89,39 @@ $h1-page-font-sizes: (
 );
 
 $h2-font-sizes: (
-  null  : 18px,
-  smaller : 23px,
-  small: 27px,
-  medium : 30px
+  null  : 21px,
+  smaller : 28px,
+  small: 30px,
+  medium : 36px
 );
 
 $h2-page-font-sizes: (
-  null  : 16px,
+  null  : 14px,
   small : 16px,
-  medium: 18px,
-  large : 20px
+  medium: 20px,
+  large : 22px
 );
 
 $h3-font-sizes: (
-  null  : 18px,
-  smaller : 20px,
-  small: 22px,
+  null  : 13px,
+  smaller : 15px,
+  small: 18px,
   medium : 24px
 );
 
 $h4-font-sizes: (
-    null  : 18px,
-    smaller : 20px,
+    null  : 15px,
+    smaller : 18px,
     small: 22px,
     medium : 24px
+);
+
+$h5-font-sizes: (
+    null  : 14px,
+    smaller : 17px,
+    small: 20px,
+    medium : 20px,
+    large: 20px,
 );
 
 
@@ -160,11 +197,11 @@ $img-menu-height: (
 );
 
 $card-menu-height: (
-  null  : 65px,
-  smaller : 65px,
-  small: 70px,
-  medium : 85px,
-  large : 100px
+  null  : 60px,
+  smaller : 60px,
+  small: 65px,
+  medium : 70px,
+  large : 90px
 );
 
 /* Width responsive */ 
@@ -204,7 +241,7 @@ $img-footer-width: (
 $menu-top-margin: (
   null  : -70px,
   smaller : -70px,
-  small: 85px,
-  medium : 90px,
-  large : 100px
+  small: -85px,
+  medium : -90px,
+  large : -100px
 );

@@ -16,7 +16,7 @@
         height: auto;
         padding-right: 5%;
         padding-left: 5%;
-      
+
         &_titre {
             display: flex;
             flex-direction: row;
@@ -33,14 +33,14 @@
                 }
             }
 
-        &_logo {
-                 align-self: center;
+            &_logo {
+                align-self: center;
                 padding-right: 10%;
                 padding-bottom: 5%;
                 position: relative;
 
                 i {
-                    @include font-size ($p-font-sizes);
+                    @include font-size ($i-heart-font-sizes);
                 }
 
                 &_empty {
@@ -70,8 +70,8 @@
 
         &_animation {
             animation: FadeIn 1s linear;
-            // animation-fill-mode: both;
-            
+            animation-fill-mode: both;
+
             &_list {
                 display: flex;
                 padding-top: 35px;
@@ -82,7 +82,7 @@
                     color: #7b7b7b;
                     position: relative;
                     @include font-size ($h2-page-font-sizes);
-                    font-weight: 500;
+                    font-weight: normal;
                 }
 
                 h2:before {
@@ -97,16 +97,14 @@
             }
         }
 
-        .menu_container:nth-child(1) {
-            animation-delay: .5s
+        .menu_container_animation:nth-child(2) {
+            animation-delay: 1s
         }
-
-        .menu_container:nth-child(2) {
-            animation-delay: 5s
+        .menu_container_animation:nth-child(3) {
+            animation-delay: 2s
         }
-
-        .menu_container:nth-child(3) {
-            animation-delay: 7.5s
+        .menu_container_animation:nth-child(4) {
+            animation-delay: 3s
         }
 
         &_menu {
@@ -124,9 +122,11 @@
             padding-bottom: 5px;
             margin-top: 25px;
             position: relative;
+
             @media screen and (min-width: 768px) {
                 max-width: 650px;
             }
+
             &_libele {
                 display: flex;
                 flex-direction: column;
@@ -135,7 +135,6 @@
                 overflow: hidden;
 
                 &_nom p {
-
                     @include font-size ($p-menu-font-sizes);
                     font-weight: 500;
                     overflow: hidden;
@@ -151,6 +150,7 @@
                     &_ingredient {
                         overflow: hidden;
                     }
+
                     &_ingredient p {
                         color: #676767;
                         @include font-size ($p-menu-ingredient-font-sizes);
@@ -172,7 +172,7 @@
                     @include font-size ($p-menu-ingredient-font-sizes);
                     font-weight: bold;
                     color: #3d3d3d;
-                } 
+                }
             }
 
             &_animation-deroulant {
@@ -207,13 +207,12 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             margin-left: 20px;
-            
+
             &_container_menu_prix {
                 margin-left: 10px;
             }
 
             i {
-
                 @include font-size ($p-font-sizes);
                 transform: rotate(0deg);
             }
@@ -222,7 +221,8 @@
 }
 
 .container_bouton {
+    background: $colour-background;
     display: flex;
     justify-content: center;
-    margin: 35px 0;
+    padding: 35px 0;
 }

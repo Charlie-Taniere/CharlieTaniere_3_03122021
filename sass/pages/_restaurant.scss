@@ -22,8 +22,8 @@
             width: 100%;
         }
 
-        h1 {
-            @include font-size ($h1-font-sizes);
+        h2 {
+            @include font-size ($h2-font-sizes);
         }
     }
 
@@ -78,7 +78,7 @@
 
                 p {
                     color: darken($colour-tertiary, 35%);
-                    @include font-size ($i-footer-and-new-font-sizes);
+                    @include font-size ($h5-font-sizes);
                 }
 
             }
@@ -101,7 +101,7 @@
 
                 p {
                     color: darken($colour-tertiary, 35%);
-                    @include font-size ($i-footer-and-new-font-sizes);
+                    @include font-size ($h5-font-sizes);
                 }
             }
         }
@@ -120,8 +120,8 @@
                 justify-content: space-around;
                 width: 80%;
 
-                h3 {
-                    @include font-size ($h3-font-sizes);
+                h4 {
+                    @include font-size ($h4-font-sizes);
                     padding-top: 19px;
                     padding-left: 15px;
                 }
@@ -142,7 +142,7 @@
                 position: relative;
 
                 i {
-                    @include font-size ($p-font-sizes);
+                    @include font-size ($i-heart-font-sizes);
                 }
 
                 &_empty {

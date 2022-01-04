@@ -46,12 +46,12 @@
         color: #7e7e7e;
 
         i {
-            @include font-size ($i-footer-and-new-font-sizes);
+            @include font-size ($i-nav-font-sizes);
         }
     }
 
-    &_p {
-        @include font-size ($p-font-sizes);
+    &_h3 {
+        @include font-size ($h3-font-sizes);
         display: flex;
         width: auto;
         justify-items: center;

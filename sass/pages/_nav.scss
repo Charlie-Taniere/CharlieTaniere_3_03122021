@@ -25,8 +25,8 @@
             width: 100%;
         }
 
-        h1 {
-            @include font-size ($h1-font-sizes);
+        h2 {
+            @include font-size ($h2-font-sizes);
         }
     }
 }
