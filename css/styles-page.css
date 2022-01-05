@@ -438,6 +438,8 @@ h5 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  padding-bottom: 4px;
+  margin-left: 10px;
 }
 .menu_container_menu_prix p {
   font-size: 13px;
@@ -484,6 +486,7 @@ h5 {
   transition: transform 1s ease-in-out;
 }
 .menu_container_menu:hover .menu_container_menu_animation-deroulant {
+  cursor: pointer;
   overflow: hidden;
   transition: 0.6s ease-in-out;
   width: 25%;
@@ -513,9 +516,6 @@ h5 {
   .menu_container_menu:hover .menu_container_menu_animation-deroulant {
     height: 90px;
   }
-}
-.menu_container_menu:hover .menu_container_menu_animation-deroulant .container_menu_prix {
-  margin-left: 10px;
 }
 .menu_container_menu:hover .menu_container_menu_animation-deroulant i {
   font-size: 14px;

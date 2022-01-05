@@ -315,6 +315,11 @@ h5 {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 992px) {
+  .presentation_container_sous-titre p {
+    font-size: 24px;
+  }
+}
 
 .bouton {
   background: linear-gradient(356deg, #9b59dc 0%, #a77fd8 33%, #ff79da 100%);
@@ -565,6 +570,11 @@ h5 {
   }
 }
 @media screen and (min-width: 768px) {
+  .nav_bouton_h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
   .nav_bouton_h3 {
     font-size: 24px;
   }
@@ -903,6 +913,11 @@ h5 {
   }
 }
 @media screen and (min-width: 768px) {
+  .restaurant_card_info_texte h4 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
   .restaurant_card_info_texte h4 {
     font-size: 24px;
   }
